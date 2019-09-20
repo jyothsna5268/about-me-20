@@ -8,18 +8,33 @@ body, html {
 
 .video-wrapper {
   width: 100%;
-  background-color: lightblue;
+  background-color:lightyellow;
 }
 
 section {
   margin: 1rem;
   padding: 2rem;
-  background-color: lightblue;
+  background-color: lightyellow
+;
   border-radius: 2em;
 }
+aside {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: lightyellow
+;
+  border-radius: 2em;
+  position: absolute;
+  left: 800px;
+  height:100%
+  padding-bottom: 120px;
+  bottom: 850px;
+}
+
+
 
 .bgimg {
-  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+  background-image: url("https://raw.githubusercontent.com/jyothsna5268/about-me/master/IMG_1532.jpg");
   height: 100%;
   position: relative;
   opacity: 0.85;

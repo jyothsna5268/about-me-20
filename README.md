@@ -12,7 +12,7 @@ My developer site.
 ## link for reference of bootstrap
 - [bootstrap](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js)
 ## link for some source codes
--[code](https://www.w3schools.com/)
+- [code](https://www.w3schools.com/)
 ### About
 Sai jyothsna Mathi
 ### copyright

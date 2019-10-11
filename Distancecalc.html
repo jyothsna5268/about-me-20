@@ -3,10 +3,17 @@
 
 <head>
   <meta name="author" content="Sai Jyothsna Mathi">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
   <style>
     img
     {
       border-radius : 50%;
+    }
+    h2, fieldset{
+      background-color: aliceblue;
     }
     </style>
   <!-- Bootstrap required meta tags-->
@@ -25,7 +32,7 @@
 
 <body class="bgimg">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">My Info</a>
+    <a class="navbar-brand" href="index.html">My Info</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,13 +40,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <!--<span class="sr-only">(current)</span>--></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="Distancecalc.html">Distance calculator</a>
+          <a class="nav-link disabled" href="Distancecalc.html"><strong>Distance calculator</strong></a>
         </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
@@ -60,7 +67,8 @@ Calculate:
 Distance Between two points.
 
 Take lattidtude and longitude of two points
---><div class="container">
+-->
+<!--<div class="container">
 <table width="100%">
 
     <tr>
@@ -82,6 +90,84 @@ Take lattidtude and longitude of two points
         </div>
       </td>
     </tr>
+    </div>-->
+    <div class="row">
+
+      <!--Rows have columns - column 1 (7/12) -->
+      <div class="col-md-7 mb-4">
+
+        <h2>Area calculator app!</h2>
+        <hr>
+
+        <fieldset class="mt-4">
+          <label for="guest">Enter your name (2 to 40 characters):</label>
+          <input id="guest" type="text" minlength="2" maxlength="40" value="Jyothsna">
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="number">given radius (1 to 100):</label>
+          <input id="number" type="number" min="1" max="100" value=7>
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <!--<fieldset class="mt-4">
+          <label for="secondNumber">Enter second number (1 to 100):</label>
+          <input id="secondNumber" type="number" min="1" max="100" value="12">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>-->
+
+      </div>
+      <!--end column 1-->
+
+      <!--column 2 (5/12) -->
+      <div class="col-md-5 mb-4">
+        <h2>Area of the given radius :</h2>
+        <hr>
+        <button id="addButton" class="btn btn-primary">Area</button>
+        <!--<button id="clicker" class="btn btn-primary">Click me!</button>-->
+        <button id="wiper" class="btn btn-danger">Clear Storage</button>
+        <!--<button id="getJokeButton" class="btn btn-success">Fetch Joke</button>-->
+       <!-- <button id="getDataButton" class="btn btn-primary">Get Todos</button>-->
+        <button id="getJokeButton" class="btn btn-success">Get Joke</button>
+       <!-- <button id="clicker" class="btn btn-indigo">Coming soon!</button>-->
+       <button class="btn btn-primary" onclick="loadDoc()">AJAX</button>
+        <hr>
+        <div id="demo">
+            <h2>Let AJAX change this text</h2>
+            </div>
+        <p id="result"></p>
+
+      </div>
+      <!-- end column 2-->
+      <!--column 3  -->
+     <!-- <div class="col-md-4 mb-4">
+        <h2>Todo List</h2>
+        <hr>
+        <ul>
+                 
+        
+          
+        </ul>
+      </div>
+       end column 3-->
+    </div>
+
+    <!-- end row 1 -->
+
+  </main>
+
+  <!-- sticky footer with padding on y-axis (top and bottom) -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Right-click / Inspect / Console</span>
+     
+      <span class="text-muted">&copy Sai jyothsna Mathi</span>
+      &#9670;
+      <span class="text-muted"><a href="file:///C:/563/projects/about-me-20/test/qunit.html">View Tests</a></span>
+      &#9670;
+      <a href="https://jyothsna5268.github.io/js-gui/">Demo</a>
+      &#9670;
+      <a href="https://github.com/jyothsna5268/js-gui/">Source</a>
     </div>
      <footer class="container-fluid">
         &copy; Sai Jyothsna Mathi 2019
@@ -92,7 +178,11 @@ Take lattidtude and longitude of two points
         crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        
+       <!---- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+
+        <script src="Distancecalc.js"></script>
+        <script src="fetchjoke.js"></script>
+        <!--<script src="todo.js"></script>-->
     </body>
     
     </html>

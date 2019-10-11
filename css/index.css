@@ -5,7 +5,11 @@ body {
 body, html {
   height: 100%;
 }
-
+#video
+{
+  width:560;
+  height:315;
+}
 .video-wrapper {
   width: 100%;
   background-color:lightyellow;
@@ -21,12 +25,11 @@ section {
 aside {
   margin: 1rem;
   padding: 2rem;
-  background-color: lightyellow
-;
+  background-color: lightyellow;
   border-radius: 2em;
   position: absolute;
   left: 800px;
-  height:100%
+  height:100%;
   padding-bottom: 120px;
   bottom: 850px;
 }
@@ -34,7 +37,7 @@ aside {
 
 
 .bgimg {
-  background-image: url("https://raw.githubusercontent.com/jyothsna5268/about-me/master/IMG_1532.jpg");
+  background-image: url("https://raw.githubusercontent.com/jyothsna5268/about-me/master/moz.jpg");
   height: 100%;
   position: relative;
   opacity: 0.85;

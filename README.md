@@ -2,7 +2,7 @@
 
 My developer site.
 
-## Links
+
 ## links for references from github
 - [Source(https://github.com/profcase/about-me-20)
 - [Demo](https://profcase.github.io/about-me-20/)
@@ -13,7 +13,13 @@ My developer site.
 - [bootstrap](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js)
 ## link for some source codes
 - [code](https://www.w3schools.com/)
-### About
-Sai jyothsna Mathi
-### copyright
-Sai jyothsna Mathi
+
+### I got help from My GA "Vijay Kumar Karanam" and my friends group mentioned below
+- kamal Reddy
+- Prudhvi
+- Chinmayi
+- Bhavya Deepthi
+- Mahalakshmi
+- Alekya
+
+
